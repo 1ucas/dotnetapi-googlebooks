@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegracaoISBN", "Integraca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegracaoISBN.Tests", "IntegracaoISBN.Tests\IntegracaoISBN.Tests.csproj", "{ED86DDCF-3C87-4703-9885-CDDC9B5210E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegracaoISBN.Services", "IntegracaoISBN.Services\IntegracaoISBN.Services.csproj", "{948CA14E-2137-4EC6-943F-8FDA14AA8143}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{ED86DDCF-3C87-4703-9885-CDDC9B5210E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED86DDCF-3C87-4703-9885-CDDC9B5210E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED86DDCF-3C87-4703-9885-CDDC9B5210E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{948CA14E-2137-4EC6-943F-8FDA14AA8143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{948CA14E-2137-4EC6-943F-8FDA14AA8143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{948CA14E-2137-4EC6-943F-8FDA14AA8143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{948CA14E-2137-4EC6-943F-8FDA14AA8143}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
