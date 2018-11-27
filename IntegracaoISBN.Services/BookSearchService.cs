@@ -21,7 +21,7 @@ namespace IntegracaoISBN.Services
             bookService = new BooksService(new BaseClientService.Initializer
             {
                 ApplicationName = "ISBNBookSearch",
-                ApiKey = "",
+                ApiKey = "{ChaveISBN}",
             });
         }
 
