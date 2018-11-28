@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Google.Apis.Books.v1.Data;
 
-namespace IntegracaoISBN.Services.Models
+namespace IntegracaoISBN.Model
 {
     public class SalesInformation
     {

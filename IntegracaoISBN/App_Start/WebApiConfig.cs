@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Headers;
+﻿using System.Net.Http.Headers;
 using System.Web.Http;
+using IntegracaoISBN.injetctor;
+using Swashbuckle.Application;
+using SimpleInjector.Integration.WebApi;
 
 namespace IntegracaoISBN
 {
@@ -29,6 +29,9 @@ namespace IntegracaoISBN
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            // Injetor de dependências
+            InjectorDependency.Iniciar();
+            config.DependencyResolver = new SimpleInjectorWebApiDependencyResolver(InjectorDependency.Container);
         }
     }
 }

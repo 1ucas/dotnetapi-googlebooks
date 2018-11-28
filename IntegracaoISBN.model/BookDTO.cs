@@ -2,7 +2,7 @@
 using Google.Apis.Books.v1.Data;
 using Newtonsoft.Json;
 
-namespace IntegracaoISBN.Services.Models
+namespace IntegracaoISBN.Model
 {
     public class BookDTO
     {

@@ -1,22 +1,23 @@
-﻿using IntegracaoISBN.Services;
-using IntegracaoISBN.Services.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using System.Threading.Tasks;
 using System.Web.Http;
+using IntegracaoISBN.model.Interface;
+using IntegracaoISBN.Model;
 
 namespace IntegracaoISBN.Controllers
 {
-    [RoutePrefix("api/ISBN")]
+    [RoutePrefix("api/private/v1")]
     public class ISBNController : ApiController
     {
-        [HttpGet]
-        [Route("isbn")]
-        public async System.Threading.Tasks.Task<BookDTO> Get(string isbn)
+        private readonly IBookSearchService _bookSearchService;
+        public ISBNController(IBookSearchService bookSearchService)
         {
-            return await new BookSearchService().SearchISBN(isbn);
+            _bookSearchService = bookSearchService;
+        }
+        [HttpGet]
+        [Route("Isbn")]
+        public async Task<BookDTO> Get(string isbn)
+        {
+            return await _bookSearchService.SearchISBN(isbn);
         }
     }
 }

@@ -63,12 +63,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BookSearchService.cs" />
-    <Compile Include="Models\BookDTO.cs" />
-    <Compile Include="Models\SalesInformation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IntegracaoISBN.model\IntegracaoISBN.Model.csproj">
+      <Project>{d45d0d3f-1631-4ffd-86ef-9338e372bfdd}</Project>
+      <Name>IntegracaoISBN.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

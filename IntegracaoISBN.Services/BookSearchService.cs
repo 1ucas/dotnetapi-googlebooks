@@ -1,18 +1,15 @@
 ﻿using Google.Apis.Books.v1;
 using Google.Apis.Books.v1.Data;
 using Google.Apis.Services;
-using IntegracaoISBN.Services.Models;
-using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using IntegracaoISBN.Model;
+using IntegracaoISBN.model.Interface;
 
 namespace IntegracaoISBN.Services
 {
-    public class BookSearchService
+    public class BookSearchService : IBookSearchService
     {
         private BooksService bookService { get; }
 
@@ -21,7 +18,7 @@ namespace IntegracaoISBN.Services
             bookService = new BooksService(new BaseClientService.Initializer
             {
                 ApplicationName = "ISBNBookSearch",
-                ApiKey = "{ChaveISBN}",
+                ApiKey = "AIzaSyCgf2bgJ8BqlacHAewkL4IjXwHq6r_ihd0",
             });
         }
 
