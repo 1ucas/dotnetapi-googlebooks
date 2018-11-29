@@ -9,7 +9,7 @@ namespace IntegracaoISBN.Tests
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void SearchISBN_CaminhoFeliz_Livro()
         {
             string isbn = "0071807993";
             Mock<IBookSearchService> mock = new Mock<IBookSearchService>();
